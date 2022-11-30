@@ -1,4 +1,7 @@
-function rot13(str) {
+function rot13() {
+  let string = document.getElementById('string')
+  let str = String(string.value)
+
   let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let alphabetReturn = "NOPQRSTUVWXYZABCDEFGHIJKLM"
   let decodedPhrase = "";
@@ -11,8 +14,8 @@ function rot13(str) {
       decodedPhrase += letterToDecode; 
     }
   }
-
-  return decodedPhrase ;
+  string.value = ''
+  answer.innerHTML = ''
+  answer.innerHTML += `Caesars is telling you: `
+  answer.innerHTML += decodedPhrase
 }
-
-console.log(rot13("Z"));
