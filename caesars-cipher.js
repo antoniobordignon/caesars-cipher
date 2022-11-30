@@ -16,6 +16,6 @@ function rot13() {
   }
   string.value = ''
   answer.innerHTML = ''
-  answer.innerHTML += `Caesars is telling you: `
+  answer.innerHTML += `Caesar is telling you: `
   answer.innerHTML += decodedPhrase
 }
